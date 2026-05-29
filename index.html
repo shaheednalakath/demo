@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightLaunch Landing Page</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f8fafc;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .nav a {
+      color: #475569;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 2.5rem;
+      align-items: center;
+      padding: 3rem 0 4rem;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 4vw, 4.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+      color: #0f172a;
+    }
+
+    .hero p {
+      max-width: 38rem;
+      color: #475569;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.95rem 1.8rem;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 16px 40px rgba(37, 99, 235, 0.18);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 2.25rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      box-shadow: 0 24px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      color: #0f172a;
+    }
+
+    .card p {
+      margin: 0;
+      color: #64748b;
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    .hero-visual {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      background: linear-gradient(180deg, #e2e8f0 0%, #f8fafc 100%);
+      box-shadow: 0 32px 90px rgba(15, 23, 42, 0.12);
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .footer {
+      padding: 2rem 0 1rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        gap: 0.75rem;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">BrightLaunch</div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Launch your next product with a landing page that converts.</h1>
+        <p>BrightLaunch makes it easy to create a polished landing page with modern design, fast performance, and clear messaging your audience will trust.</p>
+        <a class="btn-primary" href="#">Start free trial</a>
+
+        <div class="feature-grid" id="features">
+          <div class="card">
+            <h3>Built for speed</h3>
+            <p>Optimized layout and minimal assets help pages load fast on every device.</p>
+          </div>
+          <div class="card">
+            <h3>Modern sections</h3>
+            <p>Prebuilt blocks let you assemble a landing page without extra tooling.</p>
+          </div>
+          <div class="card">
+            <h3>Ready to launch</h3>
+            <p>Clean typography and clear content structure make your message stand out.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Landing page preview">
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer" id="contact">
+    <p>Designed for teams and founders who want to ship landing pages fast.</p>
+  </footer>
+</body>
+</html>
