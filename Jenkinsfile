@@ -14,8 +14,7 @@ pipeline {
                 script {
                     echo 'Running unit tests...'
                     // test logic placeholder
-                    def testStatus = 'SUCCESS'
-                    echo "Test status: ${testStatus}"
+                   
                 }
             }
         }
@@ -24,8 +23,7 @@ pipeline {
                 script {
                     echo 'Starting deployment demo...'
                     // deployment logic placeholder
-                    def status = 'SUCCESS'
-                    echo "Deployment status: ${status}"
+                  
                 }
                 echo 'Running post-deployment verification...'
                 echo 'Sending deployment notification...'
