@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Pipeline Triggered Successfully!'
+                echo 'Hello from Jenkins!'
             }
         }
     }
