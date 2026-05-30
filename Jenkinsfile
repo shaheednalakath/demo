@@ -19,5 +19,12 @@ pipeline {
                 echo 'Deploying application...'
             }
         }
+        
+        stage('Cleanup') {
+            steps {
+                echo 'Cleaning up...'
+            }
+        }
+
     }
 }
